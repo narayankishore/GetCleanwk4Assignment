@@ -2,7 +2,7 @@
 library(RCurl)
 if(!file.exists("./R/data")){dir.create("./R/data")}
 fUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl,destfile="./R/data/Dataset.zip",method="libcurl")
+download.file(fUrl,destfile="./R/data/Dataset.zip",method="libcurl")
 
 #unzip the file
 unzip(zipfile="./R/data/Dataset.zip",exdir="./R/data")
